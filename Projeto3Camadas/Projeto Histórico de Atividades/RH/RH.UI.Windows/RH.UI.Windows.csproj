@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE79DC47-A812-4B06-A90C-8319C18FD2F0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RH.UI.Windows</RootNamespace>
+    <AssemblyName>RH.UI.Windows</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultaDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaDia.Designer.cs">
+      <DependentUpon>ConsultaDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaMenu.Designer.cs">
+      <DependentUpon>ConsultaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaPeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaPeriodo.Designer.cs">
+      <DependentUpon>ConsultaPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InclusaoFuncionarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InclusaoFuncionarioForm.Designer.cs">
+      <DependentUpon>InclusaoFuncionarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InserirAtividadeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InserirAtividadeForm.Designer.cs">
+      <DependentUpon>InserirAtividadeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificaFuncionario.Designer.cs">
+      <DependentUpon>ModificaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelecaoDia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelecaoDia.Designer.cs">
+      <DependentUpon>SelecaoDia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelaInicialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaInicialForm.Designer.cs">
+      <DependentUpon>TelaInicialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConsultaDia.resx">
+      <DependentUpon>ConsultaDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMenu.resx">
+      <DependentUpon>ConsultaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaPeriodo.resx">
+      <DependentUpon>ConsultaPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InclusaoFuncionarioForm.resx">
+      <DependentUpon>InclusaoFuncionarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserirAtividadeForm.resx">
+      <DependentUpon>InserirAtividadeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificaFuncionario.resx">
+      <DependentUpon>ModificaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelecaoDia.resx">
+      <DependentUpon>SelecaoDia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicialForm.resx">
+      <DependentUpon>TelaInicialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RH.Db\RH.Db.csproj">
+      <Project>{e0b3c98e-7528-4285-ab32-b2d6aefe936a}</Project>
+      <Name>RH.Db</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RH.Models\RH.Models.csproj">
+      <Project>{18ed14a7-de91-4833-9265-52a4ffe7b1c3}</Project>
+      <Name>RH.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
